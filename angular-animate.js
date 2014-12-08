@@ -1678,7 +1678,7 @@ angular.module('ngAnimate', ['ng'])
         closingTimer = $timeout(function() {
           closeAllAnimations(animationElementQueue);
           animationElementQueue = [];
-        }, totalTime, false);
+        }, totalTime * 2, false);
       }
 
       function closeAllAnimations(elements) {
